@@ -85,14 +85,19 @@ ul li img {
     bottom: -30px;
 }
 #primary .informations .buttons button {
-    border-radius: 10px;
     border-radius: 100px;
-    background-color: var(--gb-primary);
-    padding: 10px 24px;
+    padding: 15px 24px;
     color: white;
     margin: 10px 0px;
     display: flex;
     align-items: center;
+    border: none;
+}
+#primary .informations .buttons button:nth-child(1){
+    background-color: var(--gb-secundary);
+}
+#primary .informations .buttons button:nth-child(2){
+    background-color: rgb(252, 13, 73);
 }
 
 .multiples {
