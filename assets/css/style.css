@@ -45,7 +45,7 @@ ul li span {
     color: rgb(190, 188, 188);
 }
 ul li img {
-    height: 40px;
+    height: 45px;
 }
 
 #primary .informations {
@@ -71,7 +71,7 @@ ul li img {
     font-weight: 500;
 }
 #primary .informations #visibility span {
-    margin-right: 7px;
+    margin-right: 10px;
     font-size: 17px;
 }
 #primary .informations #total {
