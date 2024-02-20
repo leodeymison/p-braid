@@ -1,6 +1,6 @@
 :root {
-    --gb-primary: #6c22e4;
-    --gb-secundary: #5f19d1;
+    --gb-primary: #6d36fb;
+    --gb-secundary: #572bc9;
 }
 
 /* GLOBAIS */
@@ -14,9 +14,11 @@ body {
 li {
     list-style-type: none;
 }
-
-p {
-    font-size: 16px;
+h2 {
+    font-size: 28px;
+}
+p, span {
+    font-size: 18px;
 }
 
 /* HEADER */
@@ -66,6 +68,9 @@ ul li img {
     display: flex;
     align-items: center;
 }
+#primary .informations strong {
+    margin-bottom: 10px;
+}
 #primary .informations button span {
     margin-right: 10px;
 }
@@ -86,12 +91,14 @@ ul li img {
 }
 #primary .informations .buttons button {
     border-radius: 100px;
-    padding: 13px 24px;
+    padding: 13px 34px;
     color: white;
     margin: 10px 4px;
     display: flex;
     align-items: center;
     border: none;
+    font-size: 12px;
+    font-weight: 600;
 }
 #primary .informations .buttons button:nth-child(1){
     background-color: var(--gb-secundary);
@@ -122,6 +129,7 @@ ul li img {
     font-weight: 600;
     display: flex;
     padding-top: .5em;
+    font-size: 33px;
 }
 .card .card-content h2 span {
     font-size: 14px;
@@ -198,7 +206,6 @@ ul li img {
 #chart .days span {
     color: rgb(0, 0, 0);
     border-radius: 99px;
-    font-size: 18px;
     width: 100%;
     display: flex;
     justify-content: center;
