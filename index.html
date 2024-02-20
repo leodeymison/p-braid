@@ -35,7 +35,7 @@
             </li>
         </ul>
         <div class="informations">
-            <p>Olá, Giovane Guedes Silvestre Filho!</p>
+            <p id="name">Olá, </p>
             <button><span class="material-symbols-outlined">
                     visibility
                 </span>Esconder valores</button>
@@ -123,6 +123,7 @@
 </html>
 
 <script>
+    document.getElementById("name").innerHTML += localStorage.getItem("braip-name") + "!" ?? "";
     document.getElementById("inp1").innerHTML += localStorage.getItem("braip-inp1") ?? "";
     document.getElementById("inp2").innerHTML += localStorage.getItem("braip-inp2") ?? "";
     document.getElementById("inp3").innerHTML += localStorage.getItem("braip-inp3") ?? "";

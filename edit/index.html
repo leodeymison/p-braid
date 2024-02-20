@@ -16,6 +16,10 @@
                 <h2>Editar informações</h2>
             </div>
             <div class="form-group">
+                <label for="exampleInputEmail1">Nome</label>
+                <input id="name" name="name" type="text" class="form-control" placeholder="Digite aqui">
+            </div>
+            <div class="form-group">
                 <label for="exampleInputEmail1">Saldo total</label>
                 <input id="inp1" name="inp1" type="text" class="form-control" placeholder="Digite aqui">
             </div>
@@ -62,6 +66,7 @@
     document.getElementById("inp5").value = localStorage.getItem("braip-inp5") ?? "";
     document.getElementById("inp6").value = localStorage.getItem("braip-inp6") ?? "";
     document.getElementById("inp7").value = localStorage.getItem("braip-inp7") ?? "";
+    document.getElementById("name").value = localStorage.getItem("braip-name") ?? "";
 </script>
 <script>
     $(document).on('submit', "#form", function (event) {
@@ -73,6 +78,9 @@
         localStorage.removeItem("braip-inp5")
         localStorage.removeItem("braip-inp6")
         localStorage.removeItem("braip-inp7")
+        localStorage.removeItem("braip-name")
+        const name = $(this).find('input[name="name"]').val();
+        localStorage.setItem("braip-name", name)
         const inp1 = $(this).find('input[name="inp1"]').val();
         localStorage.setItem("braip-inp1", inp1)
         const inp2 = $(this).find('input[name="inp2"]').val();
