@@ -141,7 +141,7 @@ ul li img {
 .card .card-title {
     background-color: var(--gb-secundary);
     border-radius: 0px 0px 14px 14px;
-    padding: 7px;
+    padding: 9px;
 }
 
 .card-icons {
