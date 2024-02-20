@@ -86,9 +86,9 @@ ul li img {
 }
 #primary .informations .buttons button {
     border-radius: 100px;
-    padding: 15px 24px;
+    padding: 13px 24px;
     color: white;
-    margin: 10px 0px;
+    margin: 10px 4px;
     display: flex;
     align-items: center;
     border: none;
