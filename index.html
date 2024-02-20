@@ -90,10 +90,30 @@
         </div>
         <div class="card">
             <div class="card-content">
-                <span class="info" style="background-color: rgb(19, 227, 0);">Vendas no Mês</span>
-                <div>
-                    <p>Agrupar por</p>
-                    <select name="" id=""></select>
+                <span class="info" style="background-color: rgb(19, 227, 0);">Comissões</span>
+                <div id="chart">
+                    <div class="subtile">
+                        <p>Agrupar por</p>
+                        <button>
+                            <strong>Data Pagamento</strong> <span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span>
+                        </button>
+                    </div>
+                    <div class="days">
+                        <span>7 dias</span>
+                        <span>14 dias</span>
+                        <span>30 dias</span>
+                    </div>
+                    <ul class="info">
+                        <li>Últimos 7 dias</li>
+                        <li>
+                            <h2 id="inp7"><span>R$</span></h2>
+                        </li>
+                    </ul>
+                    <div class="content-graph">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,4 +129,5 @@
     document.getElementById("inp4").innerHTML += localStorage.getItem("braip-inp4") ?? "";
     document.getElementById("inp5").innerHTML += localStorage.getItem("braip-inp5") ?? "";
     document.getElementById("inp6").innerHTML += localStorage.getItem("braip-inp6") ?? "";
+    document.getElementById("inp7").innerHTML += localStorage.getItem("braip-inp7") ?? "";
 </script>

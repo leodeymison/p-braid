@@ -155,3 +155,77 @@ ul li img {
     width: 50%;
     font-size: 16px;
 }
+
+#chart .subtile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0px ;
+}
+
+#chart .subtile p {
+    font-size: 20px;
+    margin-right: 5px;
+}
+#chart .subtile button {
+    border-radius: 100px;
+    background-color: rgb(255, 0, 64);
+    padding: 8px 15px;
+    color: white;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 14px;
+}
+
+#chart .subtile button span {
+    margin-left: 5px;
+}
+
+#chart .days {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 99px;
+    padding: 5px;
+    display: flex;
+}
+#chart .days span {
+    color: rgb(0, 0, 0);
+    border-radius: 99px;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+#chart .days span:nth-child(1){
+    background-color: var(--gb-primary);
+    color: rgb(255, 255, 255);
+}
+#chart .info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border-radius: 0px;
+    margin-top: 5px;
+    align-items: center;
+    border-bottom: solid 1px #626262;
+}
+
+#chart .info li {
+    color: black;
+    font-size: 18px;
+}
+#chart .info li h2 {
+    font-size: 24px;
+}
+#chart .info li h2, #chart .info li h2 span {
+    color: rgb(0, 75, 38);
+    font-weight: 100;
+}
+.content-graph {
+    height: 350px;
+    background-color: white;
+}
