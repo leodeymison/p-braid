@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Editar</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" id="form">
+            <div class="d-flex justify-content-center py-3">
+                <h2>Editar informações</h2>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Saldo total</label>
+                <input name="inp1" type="text" class="form-control" placeholder="Digite aqui">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Disponível para saque</label>
+                <input name="inp2" type="text" class="form-control" placeholder="Digite aqui">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Vendas hoje</label>
+                <input name="inp3" type="text" class="form-control" placeholder="Digite aqui">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Vendas ontem</label>
+                <input name="inp4" type="text" class="form-control" placeholder="Digite aqui">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Vendas no mês</label>
+                <input name="inp5" type="text" class="form-control" placeholder="Digite aqui">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Vendas no mês passado</label>
+                <input name="inp6" type="text" class="form-control" placeholder="Digite aqui">
+            </div>
+
+            <div class="d-flex justify-content-end py-3">
+                <button type="submit" class="btn btn-primary">Salvar informações</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+<script>
+    $(document).on('submit', ".it-btn-box", function (event) {
+        event.preventDefault();
+        const inp1 = $(this).find('input[name="inp1"]').val();
+        const inp2 = $(this).find('input[name="inp2"]').val();
+        const inp3 = $(this).find('input[name="inp3"]').val();
+        const inp4 = $(this).find('input[name="inp4"]').val();
+        const inp5 = $(this).find('input[name="inp5"]').val();
+        const inp6 = $(this).find('input[name="inp6"]').val();
+
+    });
+</script>
+
+</html>
