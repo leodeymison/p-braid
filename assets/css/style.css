@@ -166,7 +166,7 @@ ul li img {
 .card-item .image {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .card-item .image img {
