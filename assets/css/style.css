@@ -91,13 +91,13 @@ ul li img {
 }
 #primary .informations .buttons button {
     border-radius: 100px;
-    padding: 13px 34px;
+    padding: 13px 32px;
     color: white;
     margin: 10px 4px;
     display: flex;
     align-items: center;
     border: none;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
 }
 #primary .informations .buttons button:nth-child(1){
