@@ -39,10 +39,10 @@
             <button><span class="material-symbols-outlined">
                     visibility
                 </span>Esconder valores</button>
-            <h2><span>R$</span>2.800,00</h2>
+            <h2 id="inp1"><span>R$</span></h2>
             <strong>SALDO TOTAL</strong>
             <p>Disponível para saque</p>
-            <p><strong>R$ 2.200,10</strong></p>
+            <p><strong id="inp2"></strong></p>
             <div class="buttons">
                 <button>MAIS DETALHES</button>
                 <button>SOLICITAR SAQUE</button>
@@ -53,24 +53,24 @@
         <div class="card">
             <div class="card-content">
                 <span class="info" style="background-color: rgb(76, 207, 100);">Vendas Hoje</span>
-                <h2><span>R$</span>2.800,00</h2>
+                <h2 id="inp3"><span>R$</span></h2>
             </div>
             <div class="card-title">
                 <p>
                     <strong>Ontem: R$</strong>
-                    <span>0,0</span>
+                    <span id="inp4"></span>
                 </p>
             </div>
         </div>
         <div class="card">
             <div class="card-content">
                 <span class="info" style="background-color: rgb(227, 151, 0);">Vendas no Mês</span>
-                <h2><span>R$</span>2.800,00</h2>
+                <h2 id="inp5"><span>R$</span></h2>
             </div>
             <div class="card-title">
                 <p>
                     <strong>Ontem: R$</strong>
-                    <span>38,0</span>
+                    <span id="inp6"></span>
                 </p>
             </div>
         </div>
@@ -101,3 +101,12 @@
 </body>
 
 </html>
+
+<script>
+    document.getElementById("inp1").innerHTML += localStorage.getItem("braip-inp1") ?? "";
+    document.getElementById("inp2").innerHTML += localStorage.getItem("braip-inp2") ?? "";
+    document.getElementById("inp3").innerHTML += localStorage.getItem("braip-inp3") ?? "";
+    document.getElementById("inp4").innerHTML += localStorage.getItem("braip-inp4") ?? "";
+    document.getElementById("inp5").innerHTML += localStorage.getItem("braip-inp5") ?? "";
+    document.getElementById("inp6").innerHTML += localStorage.getItem("braip-inp6") ?? "";
+</script>
