@@ -1,5 +1,6 @@
 :root {
     --gb-primary: #6d36fb;
+    --gb-primary-sub: #7641fe;
     --gb-secundary: #632af4;
 }
 
@@ -23,7 +24,7 @@ p, span {
 
 /* HEADER */
 #primary {
-    background-color: var(--gb-primary);
+    background-image: linear-gradient(to bottom, var(--gb-primary-sub), var(--gb-primary)) ;
     width: 100%;
     border-radius: 0px 0px 50px 50px;
 }
