@@ -105,7 +105,7 @@ ul li img {
     background-color: var(--gb-secundary);
 }
 #primary .informations .buttons button:nth-child(2){
-    background-color: rgb(252, 13, 73);
+    background-color: #e6379e;
 }
 
 .multiples {
