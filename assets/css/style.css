@@ -1,5 +1,5 @@
 :root {
-    --gb-primary: #6d36fb;
+    --gb-primary: #723afe;
     --gb-primary-sub: #7641fe;
     --gb-secundary: #632af4;
 }
@@ -58,23 +58,29 @@ ul li img {
     margin-bottom: 1.8em;
 }
 
-#primary .informations button {
+#primary .informations #visibility {
     border: solid 1px white;
     border-radius: 10px;
     border-radius: 100px;
     background-color: #0000;
-    padding: 5px 15px;
+    padding: 3px 11px;
     color: white;
     margin: 10px 0px;
     display: flex;
     align-items: center;
+    font-weight: 500;
 }
-#primary .informations strong {
+#primary .informations #visibility span {
+    margin-right: 7px;
+    font-size: 17px;
+}
+#primary .informations #total {
     margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 2px;
 }
-#primary .informations button span {
-    margin-right: 10px;
-}
+
 #primary .informations h2 {
     font-weight: 600;
     display: flex;
@@ -102,7 +108,7 @@ ul li img {
     font-weight: 600;
 }
 #primary .informations .buttons button:nth-child(1){
-    background-color: var(--gb-secundary);
+    background-color: #5e41d3;
 }
 #primary .informations .buttons button:nth-child(2){
     background-color: #e6379e;
@@ -120,7 +126,7 @@ ul li img {
     margin-top: .7em;
 }
 .card .card-content {
-    padding: 20px 16px 16px 16px;
+    padding: 20px 16px;
 }
 .card .card-content .info {
     padding: 7px 14px;
@@ -131,7 +137,7 @@ ul li img {
     font-weight: 600;
     display: flex;
     padding-top: .5em;
-    font-size: 33px;
+    font-size: 30px;
     margin: 18px 0px 0px 0px;
 }
 .card .card-content h2 span {
@@ -140,7 +146,7 @@ ul li img {
 }
 
 .card .card-title {
-    background-color: var(--gb-secundary);
+    background-color: #6431e2;
     border-radius: 0px 0px 14px 14px;
     padding: 9px;
 }
@@ -149,26 +155,32 @@ ul li img {
     display: flex;
 }
 .card-item {
-    background-color: var(--gb-primary);
+    background-color: #6431e2;
     color: white;
     border-radius: 14px;
     margin-top: .7em;
     width: 100%;
     display: flex;
-    padding: 12px;
+    padding: 11px 12px;
 }
 .card-item:nth-child(1) {
     margin-right: 10px;
 }
-.card-item span {
+.card-item .image {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
 }
-.card-item p {
+.card-item .image img {
+    width: 60%;
+}
+.card-item .text {
+    display: flex;
+    align-items: center;
     width: 50%;
+}
+.card-item .text p {
     font-size: 16px;
 }
 
