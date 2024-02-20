@@ -124,7 +124,7 @@ ul li img {
     margin-top: .7em;
 }
 .card .card-content {
-    padding: 20px 16px;
+    padding: 23px 16px 20px 16px;
 }
 .card .card-content .info {
     padding: 7px 14px;
@@ -135,7 +135,6 @@ ul li img {
     font-weight: 600;
     display: flex;
     padding-top: .5em;
-    font-size: 30px;
     margin: 18px 0px 0px 0px;
 }
 .card .card-content h2 span {
